@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Source+Code+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.navbar {
+  height: 100px;
+}
+
+.navbar-brand {
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 2.7em !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.hero-div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.product-categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-categories h3 {
+  text-align: left;
+}
+
+.product-categories .card {
+  padding: 30px;
+}
+
+@media (max-width: 482px) {
+  .hero-div {
+    flex-direction: column;
+  }
+  .product-categories {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .product-categories .card {
+    padding: 0;
+  }
+}
+
+@media (max-width: 427px) {
+  .navbar {
+    padding: 0 !important;
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+.product-container {
+  margin-left: 20px;
+  box-shadow: -2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-container h5 {
+  font-size: 1rem;
+  width: 16em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.cart-item h5 {
+  font-family: "Source Code Pro", monospace;
+}
+
+.cart-no-item {
+  font-family: "Rubik", sans-serif;
+}
+
+.cart-total {
+  font-family: "Crete Round", serif;
+  text-align: right;
+  margin-right: 40px;
+  font-size: 22px;
+}
+
+.checkout-message {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+}
+
+.about-text {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 25px;
+  margin-top: 10px;
+}
